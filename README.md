@@ -87,8 +87,8 @@ Nella sezione download verranno riportati man mano dei file per differenti sched
 
 ### PER UNA MISURAZIONE OTTIMALE
 
-1) occorre tenerlo qualche decina di secondi per stabilizzare la lettura;
-2) la lettura non è corretta con dita fredde (nel caso, abbassate la mano verso terra per fare arrivare "sangue caldo" ai polpastrelli);
-3) il movimento può dare origine a errori di misura: pertanto si suggerisce di usare il sistema stando seduti e con il sistema+dito abbastanza fermi.
+1. occorre tenerlo qualche decina di secondi per stabilizzare la lettura;
+2. la lettura non è corretta con dita fredde (nel caso, abbassate la mano verso terra per fare arrivare "sangue caldo" ai polpastrelli);
+3. il movimento può dare origine a errori di misura: pertanto si suggerisce di usare il sistema stando seduti e con il sistema+dito abbastanza fermi.
 
 
