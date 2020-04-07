@@ -27,7 +27,7 @@ Cosa serve:
 -	Un cavo USB
 -	Un computer con Arduino IDE installato.
 
-![Immagine della board con il sensore](/img/maxrefdes117.jpg?raw=true "MAXREFDES117#")
+![Immagine della board con il sensore](https://github.com/Sensibilab/saturimetro/blob/master/maxrefdes117.jpg?raw=true "MAXREFDES117#")
 
 #### Arduino
 Una qualsiasi scheda Arduino o compatibili è compatibile con il progetto
