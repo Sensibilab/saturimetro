@@ -20,7 +20,7 @@ In questo periodo, trovare un saturimetro sul mercato in tempi brevi è quasi im
 
 **_Pertanto, si declina ogni responsabilità nell’uso di questa nota tecnica per la realizzazione di un prototipo di saturimetro secondo le istruzioni fornite. Chi usi questa nota tecnica accetta di agire a titolo personale e sotto propria esclusiva responsabilità_**
 
-### Materiali
+#### Materiali
 Cosa serve:
 -	Una qualsiasi scheda Arduino o compatibili. (Di seguito alcuni link per reperirla).
 -	Una scheda MAXREFDES117# https://bit.ly/3aQU1H7
@@ -39,9 +39,9 @@ Le schede Feather permettono di espandere le capacità di input output attravers
 Altra soluzione può essere l’utilizzo dei più performanti dispositivi di M5.
 M5Stick o M5Stack sono dispositivi (Arduino compatibili) che includono di default Bluetooth, Wifi, accelerometro, batteria e caricabatterie, tutto racchiuso in un case espandibile semplicemente con dei pezzi stampati in 3d.
 
-## Dove acquistare
+#### Dove acquistare
 
-### BOARD CON MICROCONTROLLORE
+##### BOARD CON MICROCONTROLLORE
 Arduino Uno:
 -	Arduino store: https://store.arduino.cc/
 -	Amazon: 
@@ -62,7 +62,7 @@ M5 Stack:
 -	https://bit.ly/2Xj3KSy
 -	https://bit.ly/2XgLqJS
 
-### MAXREFDES117#
+##### MAXREFDES117#
 Meno costosi:
 -	RS components: https://bit.ly/2V9lpcH 
 -	Farnel: https://bit.ly/3aTVsEO 
@@ -70,4 +70,25 @@ Meno costosi:
 Altri:
 -	Seeedstudio: https://bit.ly/2wkDJXS 
 -	Amazon: https://amzn.to/2V82sHn 
+
+#### I collegamenti
+
+La componente principale del progetto, quella che fa funzionare il tutto è la scheda con microcontrollore (quella che viene erroneamente definita “l’Arduino”). La scelta di quale utilizzare dipende da molteplici fattori (dimensione, usabilità, reperibilità…) ma non influisce sul funzionamento del dispositivo. Il sensore (MAXREFDES117) è infatti un dispositivo digitale, basato su protocollo I2C, ed utilizza solamente 4 collegamenti: due di alimentazione (GND e VCC) e due per la comunicazione (SCL, SDA). 
+SCL e SDA sono comunemente riportati su tutte le schede riportate nel paragrafo Arduino, per cui il collegamento risulta semplificato e pressoché identico per tutte le schede.
+Qui di seguito vengono riportati alcuni esempi di collegamento.
+
+Per realizzare il dispositivo nel modo più semplice e stabile, se non si ha a disposizione un saldatore a stagno, basta una breadboard e dei collegamenti realizzati in modo decente. Posizionando il sensore (MAXREFDES117) stabile sulla breadboard, la misura potrà essere più stabile e veritiera. 
+Se invece si ha a disposizione un saldatore, buone capacità di saldatura ed una stampante 3d, si può realizzare anche l’anello (trovate il file stl nei download) in cui posizionare il sensore e realizzare una misura ancora più precisa e stabile.
+
+#### Firmware
+
+Il firmware è leggermente differente a seconda della scheda utilizzata, ma il concetto fi funzionamento è del tutto simile per tutte. 
+Nella sezione download verranno riportati man mano dei file per differenti schede, mentre qui di seguito vengono riportati parti di codice con la loro spiegazione.
+
+### PER UNA MISURAZIONE OTTIMALE
+
+1) occorre tenerlo qualche decina di secondi per stabilizzare la lettura;
+2) la lettura non è corretta con dita fredde (nel caso, abbassate la mano verso terra per fare arrivare "sangue caldo" ai polpastrelli);
+3) il movimento può dare origine a errori di misura: pertanto si suggerisce di usare il sistema stando seduti e con il sistema+dito abbastanza fermi.
+
 
