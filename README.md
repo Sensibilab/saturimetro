@@ -85,6 +85,11 @@ Se invece si ha a disposizione un saldatore, buone capacità di saldatura ed una
 Il firmware è leggermente differente a seconda della scheda utilizzata, ma il concetto fi funzionamento è del tutto simile per tutte. 
 Nella sezione download verranno riportati man mano dei file per differenti schede, mentre qui di seguito vengono riportati parti di codice con la loro spiegazione.
 
+#### CASE
+
+Qui è possibile trovare un esempio di case per il sensore, stampato in 3d, da posizionare sul dito.
+https://www.thingiverse.com/thing:2755977
+
 ### PER UNA MISURAZIONE OTTIMALE
 
 1. occorre tenerlo qualche decina di secondi per stabilizzare la lettura;
