@@ -3,11 +3,11 @@
 ## NOTA:
 ### Chi usi questa nota tecnica accetta di agire a titolo personale e sotto propria esclusiva responsabilità. Si declina ogni responsabilità nell’uso di questa nota tecnica per la realizzazione di un saturimetro prototipale.
 
-### Perché il saturimetro per il covid-19?
+### _Perché il saturimetro per il covid-19?_
 ### Se il valore della saturazione scende al di sotto della soglia del 95%, ciò significa che lo scambio gassoso tra sangue e aria, che ha luogo negli alveoli polmonari, non sta avvenendo in maniera corretta. In queste condizioni, il paziente inizia a “respirare male”, ha difficoltà a respirare e potrebbe avere un principio di polmonite.
 ### In questo periodo, trovare un saturimetro sul mercato in tempi brevi è quasi impossibile. Per tale motivo abbiamo deciso di creare questo progetto che dà la possibilità, a chi lo volesse, di creare a casa un saturimetro. Ovviamente i risultati sono da considerare come molto accurati non essendo un saturimetro certificato come dispositivo medicale, né di uno strumento professionale; ma è comunque in grado di dare dei dati indicativi dello stato di salute “polmonare” di chi lo realizza e lo usa.
 
-#### Introduzione
+## Introduzione
 La saturimetria è la misurazione della percentuale di emoglobina legata all’ossigeno. La misura viene effettuata per mezzo di un pulsossimetro (o saturimetro), strumento non invasivo che basa il suo principio di funzionamento sulla “luce” (fotopletismografia).
 La sonda è composta da due diodi LED in gradi di emettere due differenti colori (lunghezze d’onda differenti) e da uno/due fotodiodi per la ricezione della luce.
 I pulsossimetri si basano sul principio fisico per il quale differenti lunghezze d’onda possono essere assorbite in modo differente da un elemento. I pulsossimetri ottici si basano sui diversi spettri di assorbimento dell’emoglobina non legata (Hb) e dell’emoglobina legata all’ossigeno/ossiemoglobina (HbO2), la stessa differenza che si evince dal diverso colore del sangue arterioso (ossigenato) da quello venoso.
@@ -18,13 +18,13 @@ Una sua variante è quella che si trova ormai nella maggior parte dei fitness tr
 
 La saturazione del sangue, in condizioni normali, si aggira attorno al 98%, mentre si comincia a parlare di possibili problematiche al di sotto del 94/95% (principio di ipossia).
 
-#### Perché il saturimetro per il covid-19?
+## Perché il saturimetro per il covid-19?
 Se il valore della saturazione scende al di sotto della soglia del 95%, ciò significa che lo scambio gassoso tra sangue e aria, che ha luogo negli alveoli polmonari, non sta avvenendo in maniera corretta. In queste condizioni, il paziente inizia a “respirare male”, ha difficoltà a respirare e potrebbe avere un principio di polmonite.
 In questo periodo, trovare un saturimetro sul mercato in tempi brevi è quasi impossibile. Per tale motivo abbiamo deciso di creare questo progetto che dà la possibilità, a chi lo volesse, di creare a casa un saturimetro. Ovviamente i risultati sono da considerare come molto accurati non essendo un saturimetro certificato come dispositivo medicale, né di uno strumento professionale; ma è comunque in grado di dare dei dati indicativi dello stato di salute “polmonare” di chi lo realizza e lo usa.
 
 **_Pertanto, si declina ogni responsabilità nell’uso di questa nota tecnica per la realizzazione di un prototipo di saturimetro secondo le istruzioni fornite. Chi usi questa nota tecnica accetta di agire a titolo personale e sotto propria esclusiva responsabilità_**
 
-#### Materiali
+## Materiali
 Cosa serve:
 -	Una qualsiasi scheda Arduino o compatibili. (Di seguito alcuni link per reperirla).
 -	Una scheda MAXREFDES117# https://bit.ly/3aQU1H7
@@ -33,7 +33,7 @@ Cosa serve:
 
 ![Immagine della board con il sensore](https://github.com/Sensibilab/saturimetro/blob/master/maxrefdes117.jpg?raw=true "MAXREFDES117#")
 
-#### Arduino
+### Arduino
 Una qualsiasi scheda Arduino o compatibili è compatibile con il progetto
 Per il progetto può bastare una scheda Arduino Uno, o una più complessa Arduino Nano BLE per la trasmissione del dato ad uno smartphone.
 
@@ -43,9 +43,9 @@ Le schede Feather permettono di espandere le capacità di input output attravers
 Altra soluzione può essere l’utilizzo dei più performanti dispositivi di M5.
 M5Stick o M5Stack sono dispositivi (Arduino compatibili) che includono di default Bluetooth, Wifi, accelerometro, batteria e caricabatterie, tutto racchiuso in un case espandibile semplicemente con dei pezzi stampati in 3d.
 
-#### Dove acquistare
+### Dove acquistare
 
-##### BOARD CON MICROCONTROLLORE
+#### BOARD CON MICROCONTROLLORE
 Arduino Uno:
 -	Arduino store: https://store.arduino.cc/
 -	Amazon: 
@@ -66,7 +66,7 @@ M5 Stack:
 -	https://bit.ly/2Xj3KSy
 -	https://bit.ly/2XgLqJS
 
-##### MAXREFDES117#
+#### MAXREFDES117#
 Meno costosi:
 -	RS components: https://bit.ly/2V9lpcH 
 -	Farnel: https://bit.ly/3aTVsEO 
@@ -75,7 +75,7 @@ Altri:
 -	Seeedstudio: https://bit.ly/2wkDJXS 
 -	Amazon: https://amzn.to/2V82sHn 
 
-#### I collegamenti
+## I collegamenti
 
 La componente principale del progetto, quella che fa funzionare il tutto è la scheda con microcontrollore (quella che viene erroneamente definita “l’Arduino”). La scelta di quale utilizzare dipende da molteplici fattori (dimensione, usabilità, reperibilità…) ma non influisce sul funzionamento del dispositivo. Il sensore (MAXREFDES117) è infatti un dispositivo digitale, basato su protocollo I2C, ed utilizza solamente 4 collegamenti: due di alimentazione (GND e VCC) e due per la comunicazione (SCL, SDA). 
 SCL e SDA sono comunemente riportati su tutte le schede riportate nel paragrafo Arduino, per cui il collegamento risulta semplificato e pressoché identico per tutte le schede.
@@ -84,17 +84,17 @@ Qui di seguito vengono riportati alcuni esempi di collegamento.
 Per realizzare il dispositivo nel modo più semplice e stabile, se non si ha a disposizione un saldatore a stagno, basta una breadboard e dei collegamenti realizzati in modo decente. Posizionando il sensore (MAXREFDES117) stabile sulla breadboard, la misura potrà essere più stabile e veritiera. 
 Se invece si ha a disposizione un saldatore, buone capacità di saldatura ed una stampante 3d, si può realizzare anche l’anello (trovate il file stl nei download) in cui posizionare il sensore e realizzare una misura ancora più precisa e stabile.
 
-#### Firmware
+## Firmware
 
 Il firmware è leggermente differente a seconda della scheda utilizzata, ma il concetto fi funzionamento è del tutto simile per tutte. 
 Nella sezione download verranno riportati man mano dei file per differenti schede, mentre qui di seguito vengono riportati parti di codice con la loro spiegazione.
 
-#### CASE
+## CASE
 
 In questa sezione verranno inseriti possibili case per la stampa 3d. Riportiamo al momento un esempio di case per il sensore, stampato in 3d, da posizionare sul dito.
 https://www.thingiverse.com/thing:2755977
 
-### PER UNA MISURAZIONE OTTIMALE
+## PER UNA MISURAZIONE OTTIMALE
 
 1. occorre tenerlo qualche decina di secondi per stabilizzare la lettura;
 2. la lettura non è corretta con dita fredde (nel caso, abbassate la mano verso terra per fare arrivare "sangue caldo" ai polpastrelli);
