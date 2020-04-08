@@ -87,7 +87,7 @@ Nella sezione download verranno riportati man mano dei file per differenti sched
 
 #### CASE
 
-Qui è possibile trovare un esempio di case per il sensore, stampato in 3d, da posizionare sul dito.
+In questa sezione verranno inseriti possibili case per la stampa 3d. Riportiamo al momento un esempio di case per il sensore, stampato in 3d, da posizionare sul dito.
 https://www.thingiverse.com/thing:2755977
 
 ### PER UNA MISURAZIONE OTTIMALE
