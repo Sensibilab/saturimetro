@@ -31,7 +31,7 @@ Cosa serve:
 -	Un cavo USB
 -	Un computer con Arduino IDE installato.
 
-![Immagine della board con il sensore](https://github.com/Sensibilab/saturimetro/blob/master/maxrefdes117.jpg?raw=true "MAXREFDES117#")
+![Immagine della board con il sensore](https://github.com/Sensibilab/saturimetro/blob/master/images/maxrefdes117.jpg?raw=true "MAXREFDES117#")
 
 ### Arduino
 Una qualsiasi scheda Arduino o compatibili è compatibile con il progetto
@@ -85,7 +85,17 @@ Per realizzare il dispositivo nel modo più semplice e stabile, se non si ha a d
 Se invece si ha a disposizione un saldatore, buone capacità di saldatura ed una stampante 3d, si può realizzare anche l’anello (trovate il file stl nei download) in cui posizionare il sensore e realizzare una misura ancora più precisa e stabile.
 
 ### Arduino Uno
-![Collegamenti per Arduino Uno](https://github.com/Sensibilab/saturimetro/blob/master/image/Arduino.jpg?raw=true "MAXREFDES117#")
+![Collegamenti per Arduino Uno](https://github.com/Sensibilab/saturimetro/blob/master/images/Arduino.png?raw=true "Arduino Uno")
+![Collegamenti per Arduino Uno con Breadboard](https://github.com/Sensibilab/saturimetro/blob/master/images/arduino_breadboard.png?raw=true "Arduino Uno")
+
+### Arduino Nano BLE
+![Collegamenti per Arduino Uno con breadboard](https://github.com/Sensibilab/saturimetro/blob/master/images/arduino_nano.png?raw=true "Arduino Uno")
+
+### Feather 32u4 Bluefruit LE
+![Collegamenti per Feather 32u4 Bluefruit LE](https://github.com/Sensibilab/saturimetro/blob/master/images/feather_max.png?raw=true "Feather")
+
+### M5Stack
+![Collegamenti per M5Stack](https://github.com/Sensibilab/saturimetro/blob/master/images/m5stack_max.png?raw=true "M5Stack")
 
 ## Firmware
 
