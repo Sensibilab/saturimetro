@@ -3,6 +3,10 @@
 ### NOTA:
 ### Chi usi questa nota tecnica accetta di agire a titolo personale e sotto propria esclusiva responsabilità. Si declina ogni responsabilità nell’uso di questa nota tecnica per la realizzazione di un saturimetro prototipale.
 
+#### Perché il saturimetro per il covid-19?
+### Se il valore della saturazione scende al di sotto della soglia del 95%, ciò significa che lo scambio gassoso tra sangue e aria, che ha luogo negli alveoli polmonari, non sta avvenendo in maniera corretta. In queste condizioni, il paziente inizia a “respirare male”, ha difficoltà a respirare e potrebbe avere un principio di polmonite.
+### In questo periodo, trovare un saturimetro sul mercato in tempi brevi è quasi impossibile. Per tale motivo abbiamo deciso di creare questo progetto che dà la possibilità, a chi lo volesse, di creare a casa un saturimetro. Ovviamente i risultati sono da considerare come molto accurati non essendo un saturimetro certificato come dispositivo medicale, né di uno strumento professionale; ma è comunque in grado di dare dei dati indicativi dello stato di salute “polmonare” di chi lo realizza e lo usa.
+
 #### Introduzione
 La saturimetria è la misurazione della percentuale di emoglobina legata all’ossigeno. La misura viene effettuata per mezzo di un pulsossimetro (o saturimetro), strumento non invasivo che basa il suo principio di funzionamento sulla “luce” (fotopletismografia).
 La sonda è composta da due diodi LED in gradi di emettere due differenti colori (lunghezze d’onda differenti) e da uno/due fotodiodi per la ricezione della luce.
