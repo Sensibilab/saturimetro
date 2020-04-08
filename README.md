@@ -82,6 +82,8 @@ SCL e SDA sono comunemente riportati su tutte le schede riportate nel paragrafo 
 Qui di seguito vengono riportati alcuni esempi di collegamento.
 
 Per realizzare il dispositivo nel modo più semplice e stabile, se non si ha a disposizione un saldatore a stagno, basta una breadboard e dei collegamenti realizzati in modo decente. Posizionando il sensore (MAXREFDES117) stabile sulla breadboard, la misura potrà essere più stabile e veritiera. 
+
+
 Se invece si ha a disposizione un saldatore, buone capacità di saldatura ed una stampante 3d, si può realizzare anche l’anello (trovate il file stl nei download) in cui posizionare il sensore e realizzare una misura ancora più precisa e stabile.
 
 ### Arduino Uno
@@ -102,10 +104,41 @@ Se invece si ha a disposizione un saldatore, buone capacità di saldatura ed una
 Il firmware è leggermente differente a seconda della scheda utilizzata, ma il concetto du funzionamento è simile per tutte. 
 Nella sezione download verranno riportati man mano dei file per differenti schede, mentre qui di seguito vengono riportati porzioni di codice con la loro spiegazione.
 
+###Arduino Uno
+1. Scaricare la cartella ArduinoUno e tutto il suo contenuto
+2. Installare Arduino IDE sul proprio computer
+3. Cliccare due volte sul file ArduinoUno.ino all'interno della cartella
+4. Se la cartella è stata rinominata, verrà creata una sottocartella con il nome ArduinoUno; spostare tutti i file .cpp e .h scaricati all'interno di questa cartella.
+5. Nell'IDE Arduino, cliccare sul menù strumenti, scheda e selezionare la scheda arduino uno.
+6. Sempre nel menu strumenti, selezionare la porta COM corretta.
+7. Cliccare sul comando carica (la freccia che punta a destra, secondo bottone tondo da sinistra).
+8. Attendere la compilazione ed il caricamento.
+9. Cliccare sulla lente di ingrandimento (ultimo bottone sulla sinistra): si aprirà il montor seriale.
+10. Nel menu in basso a destra, nel monitor seriale, selezionare 115200 baud
+11. Porre l'indice appoggiato al sensore (con il polpastrello rivolto verso il sensore)
+12. Premere un tasto qualsiasi sulla tastiera per iniziare l'acquisizione
+
+Verranno continuamente mostrate righe del tipo:
+
+red=572, ir=509<br/>
+red=565, ir=566<br/>
+
+Dopo circa 4 secondi (necessari per tarare il sensore), le righe cambieranno diventando:<br/>
+red=5691, ir=4004, HR=266, HRvalid=0, SPO2=-999, SPO2Valid=0<br/>
+
+HRvalid e SPO2Valid indicano la validità della misura.<br/>
+Se il numero mostrato è 0, la misura non è valida;<br/>
+Se il numero mostrato è 1, la misura è valida.<br/>
+
+Se la misura non è valida, mantenere il dito sopra al sensore, tenendolo il più fermo possibile, senza premere eccessivamente. La riga mostrata diventerà in breve tempo del tipo:<br/>
+red=5691, ir=4004, HR=76, HRvalid=1, SPO2=98, SPO2Valid=1<br/>
+
+
 ## CASE
 
 In questa sezione verranno inseriti possibili case per la stampa 3d. Riportiamo al momento un esempio di case per il sensore, stampato in 3d, da posizionare sul dito.
 https://www.thingiverse.com/thing:2755977
+
 
 ## PER UNA MISURAZIONE OTTIMALE
 
