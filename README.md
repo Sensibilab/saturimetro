@@ -99,8 +99,8 @@ Se invece si ha a disposizione un saldatore, buone capacità di saldatura ed una
 
 ## Firmware
 
-Il firmware è leggermente differente a seconda della scheda utilizzata, ma il concetto fi funzionamento è del tutto simile per tutte. 
-Nella sezione download verranno riportati man mano dei file per differenti schede, mentre qui di seguito vengono riportati parti di codice con la loro spiegazione.
+Il firmware è leggermente differente a seconda della scheda utilizzata, ma il concetto du funzionamento è simile per tutte. 
+Nella sezione download verranno riportati man mano dei file per differenti schede, mentre qui di seguito vengono riportati porzioni di codice con la loro spiegazione.
 
 ## CASE
 
