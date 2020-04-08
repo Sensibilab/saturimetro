@@ -84,6 +84,9 @@ Qui di seguito vengono riportati alcuni esempi di collegamento.
 Per realizzare il dispositivo nel modo più semplice e stabile, se non si ha a disposizione un saldatore a stagno, basta una breadboard e dei collegamenti realizzati in modo decente. Posizionando il sensore (MAXREFDES117) stabile sulla breadboard, la misura potrà essere più stabile e veritiera. 
 Se invece si ha a disposizione un saldatore, buone capacità di saldatura ed una stampante 3d, si può realizzare anche l’anello (trovate il file stl nei download) in cui posizionare il sensore e realizzare una misura ancora più precisa e stabile.
 
+### Arduino Uno
+![Collegamenti per Arduino Uno](https://github.com/Sensibilab/saturimetro/blob/master/image/Arduino.jpg?raw=true "MAXREFDES117#")
+
 ## Firmware
 
 Il firmware è leggermente differente a seconda della scheda utilizzata, ma il concetto fi funzionamento è del tutto simile per tutte. 
