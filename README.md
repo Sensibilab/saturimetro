@@ -147,3 +147,6 @@ https://www.thingiverse.com/thing:2755977
 3. il movimento può dare origine a errori di misura: pertanto si suggerisce di usare il sistema stando seduti e con il sistema+dito abbastanza fermi.
 
 
+## Progetto realizzato da
+<img src="https://github.com/Sensibilab/saturimetro/blob/master/images/Giallo_pngRisorsa%202.png" width=200>
+<img src="https://github.com/Sensibilab/saturimetro/blob/master/images/Risorsa%202.png" width=50>
