@@ -13,6 +13,49 @@ La prima voce del menu che si aprirà è "Gestione Librerie" ed è l'opzione att
 
 Una volta aperto il gestore librerie, occorre ricercare ed installare: MAX3010x
 
+![Installazione della libreria](https://github.com/Sensibilab/saturimetro/blob/master/M5Stack/image/libreria.png)
 
+Nonostante le ottime caratteristiche del dispositivo M5Stack, questi non fa parte propriamente della famiglia Arduino, e per tale motivo deve essere installato manualmente.
+
+Dapprima occorre installare il driver: 
+- Win10 [download](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/drivers/CP210x_VCP_Windows.zip)
+- MacOs [download](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/drivers/CP210x_VCP_MacOS.zip)
+- Linux [download](https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/drivers/CP210x_VCP_Linux.zip)
+
+Passo successivo è l'installazione di ESP32 Board Manager in modo che il device M5Stack sia programmabile dall'IDE Arduino.
+
+Ecco i passi da seguire:
+1. Aprire le preferenze di Arduino:
+- Su windows attraverso il menu File/Preferences
+- Su Max attraverso il menu Arduino/Preferences
+
+2. Nell'opzione "URL aggiuntivo per il Gestore schede" copiare il seguente link:  https://dl.espressif.com/dl/package_esp32_index.json
+
+3. Premere ok
+
+4. Dal menu Strumenti, selezionare Schede: e successivamente Gestore schede
+
+5. Nella barra di ricerca inserire "ESP32" (senza virgolette).
+
+6. Selezionare ESP32 ed installare. Questa operazione, a seconda della connessione internet, potrebbe richiedere fino a 20/30 min.
+
+Ora avrete installato il gestore schede per la maggior parte dei dispositivi basati su ESP32. Nella selezione delle schede potete quindi selezionare M5Stack-Core-ESP32 e la porta al quale è collegato.
+
+Ultimissima operazione è l'installazione della libreria M5stack. Procediamo come per la libreria MAX3010x, ma ricercando questa volta "m5stack". Installiamo la libreria m5stack by m5stack.
+
+Siamo ora pronti per il firmware.
+
+Il file M5Stack.ino include il firmware per il saturimetro.
+Una volta programmato, il dispositivo mostrerà un menu in basso, con il quale è possibile sceglire se visualizzare la frequenza cardiaca ed il tracciato dell'onda dicrota (in questo caso, solo il led infrarossi è attivo); oppure, con il tasto centrale, visualizzare il valore dell'SpO2.
+
+In questo ultimo caso, per i primi 5/10 secondi verrà eseguita una inizializzazione del sensore, campionando una parte di segnale in modo da ottimizzare l'esecuzione dell'algoritmo. Successivamente verrà mostrato il valore della saturazione.
+Se la scritta rimane ROSSA, il segnale letto dal sensore è di scarsa qualità, ed il valore non è affidabile.
+Se la scritta diventa VERDE, il segnale è buono., ed i valori iniziano ad essere sensati. Occorre qualche secondo affinche il segnale si stabilizzi. Se all'inizio viene visualizzato un valore molto basso non occorre spaventarsi, il valore potrebbe essere errato a causa di una cattiva inizializzazione o posizionamento iniziale del dito: aspettate ancora qualche secondo affinche il segnale si stabilizzi.
+
+Il saturimetro è uno strumento molto sensibile; anche i saturimetri ospedalieri spesso danno dati sbagliati a causa di movimenti delle dita o mal posizionamento.
+
+
+
+            
 
 
