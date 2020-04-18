@@ -54,7 +54,13 @@ Se la scritta diventa VERDE, il segnale è buono., ed i valori iniziano ad esser
 
 Il saturimetro è uno strumento molto sensibile; anche i saturimetri ospedalieri spesso danno dati sbagliati a causa di movimenti delle dita o mal posizionamento.
 
+Misurazione dell'SpO2
 
+<img src="https://github.com/Sensibilab/saturimetro/blob/master/M5Stack/image/IMG_20200417_114131.jpg" height="250">
+
+Misurazione dell'HR. Quanto il dito viene tolto dal sensore, la misurazione viene interrotta e appara un messaggio a schermo. Se non si mantiene il dito stabilmente sul sensore, il segnale pletismografico diventa poco stabile e la misurazione impossibile.
+
+<img src="https://github.com/Sensibilab/saturimetro/blob/master/M5Stack/image/IMG_20200417_114237_MP.jpg" height="250">
 
             
 
