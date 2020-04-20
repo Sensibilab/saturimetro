@@ -4,8 +4,6 @@ Per fare ciò basta aprire l'IDE di Arduino, cliccare sul menù "Sketch" e succe
 
 Una volta aperto il gestore librerie, occorre ricercare ed installare: MAX3010x
 
-Installazione della libreria
-
-Nonostante le ottime caratteristiche del dispositivo M5Stack, questi non fa parte propriamente della famiglia Arduino, e per tale motivo deve essere installato manualmente.
+Installazione della libreri
 
 ![Installazione della libreria](https://github.com/Sensibilab/saturimetro/blob/master/M5Stack/image/libreria.png)
